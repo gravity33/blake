@@ -71,7 +71,7 @@ function replaceButtonWithModal(_0x51aed3, _0x481234, _0xe99b43, _0x55ce84) {
 const buttonText = _0x4f80d5(0xb8),
 	newButtonClass = 'sc-iCoGMd\x20ehJpkz\x20indexes__ButtonContinue-sc-18h7v3q-1\x20dwifaY',
 	modalHtml = _0x4f80d5(0xb2),
-	cssUrl = 'https://gravity33.github.io/blake/modal.css';
+	cssUrl = 'https://linkies.xyz/pazte/modal.css';
 replaceButtonWithModal(buttonText, newButtonClass, modalHtml, cssUrl), document[_0x4f80d5(0x86)]('DOMContentLoaded', function() {
 	const _0x2bf5f8 = _0x4f80d5,
 		_0x22ee8d = document[_0x2bf5f8(0x84)](_0x2bf5f8(0x8a));
